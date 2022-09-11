@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +17,6 @@ main {
   position: absolute;
   top: 0;
   left: 300px;
-  scroll-behavior: smooth;
 }
 
 a {
