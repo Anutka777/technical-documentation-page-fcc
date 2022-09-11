@@ -1,6 +1,10 @@
 # technical-documentation-page-fcc
 *FreeCodeCamp Responsive Web Design Project*
 
+![Normal screen](screenshot1.jpeg)
+
+![Small screen](screenshot2.jpeg)
+
 [**Live Demo Link**](https://anutka777.github.io/technical-documentation-page-fcc/)
 
  Build an app that is functionally similar to this: [https://technical-documentation-page.freecodecamp.rocks](https://technical-documentation-page.freecodecamp.rocks)
