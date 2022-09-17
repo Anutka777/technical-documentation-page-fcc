@@ -26,7 +26,7 @@ a {
 
 ul {
   list-style: none;
-  width: 30%;
+  width: clamp(140px,30%,400px);
   padding: 1em;
   margin: 0 0 1em ;
   box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
@@ -57,7 +57,7 @@ li > a:visited {
 
 .main-section header {
   padding-left: 1em;
-  font-size: 1.5em;
+  font-size: clamp(1.5em,8vw,2em);
   font-weight: bold;
   line-height: 2.5;
 }
@@ -74,6 +74,7 @@ code {
   overflow: auto;
   background-color: black;
   border-radius: 1em;
+  box-shadow: 2px 2px 4px 4px rgba(12,12,12,0.3);
   font-size: .7em;
   font-family: monospace;
   color: rgb(30, 209, 30);
@@ -120,6 +121,27 @@ p::first-letter {
   display: none;
 }
 
+@media(min-width: 1700px) {
+  body {
+    font-size: 30px;
+  }
+  
+  nav {
+    width: 400px;
+  }
+  
+  main {
+    width: clamp(500px, 75ch, 1800px);
+    left: 400px;
+  }
+}
+
+@media (min-width: 1960px) {
+  main {
+    left: 650px;
+  }
+}
+
 @media (max-width: 1095px) {
   main {
     left: 0;
@@ -141,6 +163,7 @@ p::first-letter {
     text-align: center;
     letter-spacing: -25px;
     background-color: palevioletred;
+    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
   }
 }
 
