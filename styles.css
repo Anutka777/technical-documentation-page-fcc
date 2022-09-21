@@ -1,3 +1,12 @@
+:root {
+  --background-color: peachpuff;
+  --background-color: #C4AE78;
+  --acsent-color: #6F5B3E;
+  --main-text-color: rgba(12,12,12,0.8);
+  --main-text-color: #171515;
+  --shadow-color: rgba(12,12,12,0.2);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,21 +16,17 @@
 }
 
 body {
-  position: relative;
-  background-color: peachpuff;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: var(--background-color);
   font-family: 'Noto Sans Balinese', sans-serif;
   font-size: 20px;
-  color: rgba(12,12,12,0.8);
-}
+  color: var(--main-text-color);
 
-main {
-  position: absolute;
-  top: 0;
-  left: 300px;
 }
 
 a {
-  color: rgba(12,12,12,0.8);
+  color: var(--main-text-color);
 }
 
 ul {
@@ -29,17 +34,17 @@ ul {
   width: clamp(140px,30%,400px);
   padding: 1em;
   margin: 0 0 1em ;
-  box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+  box-shadow: 5px 5px 20px var(--shadow-color);
   border-radius: 1em;
 }
 
 li {
-  font-size: .7em;
+  font-size: .8em;
 }
 
 li > a {
   text-decoration: none;
-  color: rgba(12,12,12,0.8);
+  color: var(--main-text-color);
 }
 
 li > a:hover {
@@ -47,7 +52,7 @@ li > a:hover {
 }
 
 li > a:visited {
-  color: palevioletred;
+  color: var(--acsent-color);
 }
 
 .main-section {
@@ -63,7 +68,7 @@ li > a:visited {
 }
 
 .main-section:target > header {
-  color: palevioletred;
+  color: var(--acsent-color);
 }
 
 code {
@@ -72,9 +77,9 @@ code {
   margin: 1em;
   max-width: 90%;
   overflow: auto;
-  background-color: black;
+  background-color: var(--main-text-color);
   border-radius: 1em;
-  box-shadow: 2px 2px 4px 4px rgba(12,12,12,0.3);
+  box-shadow: 5px 5px 20px var(--shadow-color);
   font-size: .7em;
   font-family: monospace;
   color: rgb(30, 209, 30);
@@ -82,12 +87,9 @@ code {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  padding: 1em;
+  flex-basis: content;
   text-align: center;
+  padding: 1em;
 }
 
 .logo {
@@ -99,6 +101,7 @@ nav {
   margin-bottom: 1em;
   font-size: 1.5em;
   line-height: 1.5;
+  max-width: 10em;
 }
 
 .nav-link {
@@ -108,7 +111,8 @@ nav {
 
 .nav-link:hover {
   border-radius: 1em;
-  box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+  box-shadow: 5px 5px 20px var(--shadow-color);
+  text-decoration: underline;
 }
 
 p::first-letter {
@@ -121,7 +125,7 @@ p::first-letter {
   display: none;
 }
 
-@media(min-width: 1700px) {
+/* @media(min-width: 1700px) {
   body {
     font-size: 30px;
   }
@@ -162,8 +166,8 @@ p::first-letter {
     text-orientation: upright;
     text-align: center;
     letter-spacing: -25px;
-    background-color: palevioletred;
-    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+    background-color: var(--acsent-color);
+    box-shadow: 5px 5px 20px var(--shadow-color);
   }
 }
 
@@ -180,4 +184,4 @@ p::first-letter {
   ul {
     display: none;
   }
-}
+} */
