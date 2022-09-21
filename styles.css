@@ -1,5 +1,4 @@
 :root {
-  --background-color: peachpuff;
   --background-color: #C4AE78;
   --acsent-color: #6F5B3E;
   --main-text-color: rgba(12,12,12,0.8);
@@ -16,13 +15,10 @@
 }
 
 body {
-  display: flex;
-  flex-direction: row-reverse;
   background-color: var(--background-color);
   font-family: 'Noto Sans Balinese', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--main-text-color);
-
 }
 
 a {
@@ -31,15 +27,15 @@ a {
 
 ul {
   list-style: none;
-  width: clamp(140px,30%,400px);
+  width: 45%;
   padding: 1em;
-  margin: 0 0 1em ;
+  margin-bottom: 1em ;
   box-shadow: 5px 5px 20px var(--shadow-color);
-  border-radius: 1em;
+  border-radius: .7em;
 }
 
 li {
-  font-size: .8em;
+  font-size: 1rem;
 }
 
 li > a {
@@ -56,14 +52,15 @@ li > a:visited {
 }
 
 .main-section {
-  margin: 1em 3em 1em 2em;
-  padding: 0;
+  padding: 3em 2em;
+  margin-left: 22rem;
+  max-width: 75ch;
 }
 
 .main-section header {
   padding-left: 1em;
-  font-size: clamp(1.5em,8vw,2em);
-  font-weight: bold;
+  font-size: clamp(1em,8vw,1.6em);
+  font-weight: 400;
   line-height: 2.5;
 }
 
@@ -80,28 +77,33 @@ code {
   background-color: var(--main-text-color);
   border-radius: 1em;
   box-shadow: 5px 5px 20px var(--shadow-color);
-  font-size: .7em;
+  font-size: .8rem;
   font-family: monospace;
   color: rgb(30, 209, 30);
   white-space: pre;
 }
 
 nav {
-  flex-basis: content;
   text-align: center;
-  padding: 1em;
+  padding: 3em 2em;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
-  width: 5em;
-  height: 5em;
+  width: 18rem;
+}
+
+.logo-img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .nav-header {
   margin-bottom: 1em;
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: 1.5;
-  max-width: 10em;
+  font-weight: 700;
 }
 
 .nav-link {
@@ -110,7 +112,7 @@ nav {
 }
 
 .nav-link:hover {
-  border-radius: 1em;
+  border-radius: .6em;
   box-shadow: 5px 5px 20px var(--shadow-color);
   text-decoration: underline;
 }
