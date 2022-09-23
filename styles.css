@@ -81,7 +81,7 @@ code {
   font-family: monospace;
   color: rgb(30, 209, 30);
   white-space: pre;
-  text-align: left!important;
+  text-align: left;
 }
 
 nav {
@@ -230,6 +230,9 @@ p::first-letter {
   .main-section {
     margin-left: 2em;
     margin-right: 2em;
+  }
+  
+  .main-section header {
     text-align: center;
   }
 

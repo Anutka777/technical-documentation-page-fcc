@@ -1,9 +1,9 @@
 # technical-documentation-page-fcc
 *FreeCodeCamp Responsive Web Design Project*
 
-![Normal screen](screenshot1.jpeg)
+![Normal screen](screenshot_1.jpeg)
 
-![Small screen](screenshot2.jpeg)
+![Small screen](screenshot_2.jpeg)
 
 [**Live Demo Link**](https://anutka777.github.io/technical-documentation-page-fcc/)
 
